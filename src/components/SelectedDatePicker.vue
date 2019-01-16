@@ -27,7 +27,7 @@ export default {
 
   },
   updated() {
-    console.log('SelectedDatePicker updated', name)
+    console.log('SelectedDatePicker updated', this.name)
   }
 }
 </script>
