@@ -24,7 +24,7 @@ const actions = {
   handleEndDateSelect: function({state, commit}, e) {
 			const selectedDate = e
 			if ( moment(selectedDate).isBefore(moment(state.startDate).format('MMMM D, YYYY')) ) {
-        console.log('enddate is before end date, adjusting start date value')
+        console.log('enddate is before start date, adjusting start date value')
         commit('UPDATE_PROP', {key: "startDate", value: moment(selectedDate).format('MMMM D, YYYY')})
       }
       commit('UPDATE_PROP', {key: "endDate", value: moment(selectedDate).format('MMMM D, YYYY')})
