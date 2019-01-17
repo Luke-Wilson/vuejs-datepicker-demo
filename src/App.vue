@@ -14,6 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width:600px;
+  margin:10px auto;
 }
 #nav {
   padding: 30px;
@@ -26,5 +28,15 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.home .vdp-datepicker > div {
+  padding: 0 32%;
+}
+
+.home input[type="text"] {
+    margin-top: 15px;
+    font-size: 18px;
+    padding:12px;
+    text-align: center;
 }
 </style>
