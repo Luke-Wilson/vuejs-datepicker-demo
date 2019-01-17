@@ -3,8 +3,8 @@ import moment from 'moment';
 
 // initial state
 const state = {
-  startDate: "March 10, 2019",
-  endDate: "March 20, 2019",
+  startDate: moment().format('MMMM D, YYYY'),
+  endDate: moment().add(1,'days').format('MMMM D, YYYY'),
 };
 
 // getters
@@ -29,6 +29,7 @@ const actions = {
       }
       commit('UPDATE_PROP', {key: "endDate", value: moment(selectedDate).format('MMMM D, YYYY')})
 	},
+
 };
 
 // mutations
